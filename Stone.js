@@ -29,8 +29,9 @@ class Stone{
     translate(stonepos.x, stonepos.y); 
     rectMode (CENTER)
     
-    ellipse(0,0,this.r, this.r);
-    
+    ellipseMode(RADIUS);
+    imageMode (CENTER)
+    image (this.image,0,0,this.r*2,this.r*2)
     pop()
     }
     }
